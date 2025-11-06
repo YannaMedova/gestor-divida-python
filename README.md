@@ -47,24 +47,63 @@ Bibliotecas Nativas: subprocess, os, sys, tkinter (para messagebox, filedialog e
 
 Imagens: PIL (Pillow) (para a splash screen)
 
-Empacotamento: PyInstaller (através do auto-py-to-exe)
+Empacotamento: PyInstaller
 
-4. Desafios e Aprendizados
+4. Como Executar (Para Desenvolvedores)
+
+Para executar o projeto localmente a partir do código-fonte, siga estes passos:
+
+Clone o repositório:
+
+git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+cd SEU-REPOSITORIO
+
+
+Crie e ative um ambiente virtual:
+
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+
+Instale as dependências:
+
+pip install -r requirements.txt
+
+
+Execute a aplicação:
+Para rodar o programa com a splash screen (como no executável):
+
+python Splash.py
+
+
+Para rodar o programa principal diretamente (para depuração rápida):
+
+python Divida_Mayara.py
+
+
+5. Lições Aprendidas e Próximos Passos
+
+Esta seção substitui a antiga "Desafios e Aprendizados".
+
+5.1 Lições Aprendidas
 
 Este projeto foi uma jornada de aprendizado intensiva em depuração e integração de bibliotecas.
 
-Desafio: Integrar o gráfico do Matplotlib com a interface do CustomTkinter, especialmente garantindo que o fundo do gráfico mudasse junto com o tema (Claro/Escuro).
+Integração de Bibliotecas: Integrar o Matplotlib com o CustomTkinter, especialmente para garantir que o fundo do gráfico mudasse junto com o tema, exigiu uma lógica de destruir e recriar o canvas do gráfico a cada troca.
 
-Solução: Desenvolvi uma lógica para destruir e recriar completamente o canvas do gráfico a cada troca de tema, garantindo uma atualização visual correta.
+Programação Concorrente (UI): Resolvi um bug de "condição de corrida" (TclError) que ocorria ao trocar o tema. Aprendi a usar o método .after(10, ...) para agendar a recriação do gráfico, dando tempo para a troca de tema ser concluída primeiro.
 
-Desafio: Resolver um bug de "condição de corrida" (TclError) que ocorria ao trocar o tema, onde a interface tentava acessar um widget que estava sendo recriado.
+Comunicação entre Processos: Para a splash screen (Splash.exe) fechar no momento certo, implementei um sistema de sinalização baseado em arquivo (signal.tmp), onde o app principal (Divida_Mayara.exe) cria um arquivo para "avisar" a splash que ela pode fechar.
 
-Solução: Aprendi e implementei o método .after(10, ...) para agendar a recriação do gráfico, dando tempo para a troca de tema do CustomTkinter ser concluída primeiro.
+Empacotamento: Aprendi a usar a função resource_path (com sys._MEIPASS) para garantir que o .exe final sempre encontrasse seus arquivos "assets" (ícone, JSON, imagens), independentemente de onde fosse executado.
 
-Desafio: Fazer a comunicação entre os dois executáveis (Splash.exe e Divida_Mayara.exe) para que a splash screen fechasse no momento certo.
+5.2 Próximos Passos
 
-Solução: Implementei um sistema de sinalização baseado em arquivo (signal.tmp), onde o app principal cria um arquivo para "avisar" a splash screen que ela pode fechar.
+Como todo projeto, sempre há espaço para melhorias. Algumas ideias para o futuro incluem:
 
-Desafio: Garantir que o .exe final encontrasse todos os seus arquivos (ícone, JSON, imagem da splash) ao ser executado.
+Campo de "Observação": Adicionar um campo de texto opcional para notas em cada pagamento.
 
-Solução: Criei uma função resource_path usando sys._MEIPASS para garantir que o programa sempre encontrasse seus "assets", tanto no ambiente de desenvolvimento quanto no executável empacotado.
+Edição da Dívida Inicial: Permitir que o usuário altere o valor da dívida inicial através da própria interface.
+
+Instalador: Criar um instalador .msi completo em vez de depender de um arquivo .zip com a pasta do programa.
