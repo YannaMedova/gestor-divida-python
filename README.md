@@ -1,15 +1,39 @@
-Projeto: Gestor de Dívida Pessoal (Desktop App)
+<!-- Imagem de Banner -->
 
-<img width="1914" height="1027" alt="AppModoClaro" src="https://github.com/user-attachments/assets/b17e5612-aed4-4e83-812f-4d9704f6ebb2" />
-<img width="1913" height="1027" alt="AppModoEscuro" src="https://github.com/user-attachments/assets/f4dcc075-07d2-4265-9e40-be63074a38b6" />
+<p align="center">
+<img src="AppModoEscuro.png" alt="Screenshot do Gestor de Dívida no modo escuro" width="800px" />
+</p>
 
-1. Resumo do Projeto
+<!-- Título e Badges -->
+
+<h1 align="center">Gestor de Dívida Pessoal (Desktop App)</h1>
+
+<p align="center">
+<img alt="Status do Projeto" src="https://www.google.com/search?q=https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen">
+<img alt="Linguagem" src="https://www.google.com/search?q=https://img.shields.io/badge/Python-3.x-blue">
+<img alt="UI" src="https://www.google.com/search?q=https://img.shields.io/badge/UI-CustomTkinter-blueviolet">
+<img alt="Gráficos" src="https://www.google.com/search?q=https://img.shields.io/badge/Gr%C3%A1ficos-Matplotlib-orange">
+<img alt="Licença" src="https://www.google.com/search?q=https://img.shields.io/badge/Licen%C3%A7a-MIT-informational">
+</p>
+
+<!-- Índice -->
+
+<p align="center">
+<a href="#-sobre-o-projeto">Sobre o Projeto</a> •
+<a href="#-funcionalidades-principais">Funcionalidades</a> •
+<a href="#-tecnologias-utilizadas">Tecnologias</a> •
+<a href="#-screenshots">Screenshots</a> •
+<a href="#-lições-e-próximos-passos">Aprendizados</a> •
+<a href="#-licença">Licença</a>
+</p>
+
+🚀 Sobre o Projeto
 
 Este é um projeto de estudo pessoal desenvolvido com o objetivo de aplicar e aprofundar meus conhecimentos em Python e desenvolvimento de interfaces gráficas (GUI). A aplicação substitui o acompanhamento manual de um empréstimo (feito anteriormente em uma planilha) por uma solução de desktop completa, funcional e interativa.
 
 O projeto foi construído de forma incremental, começando com uma lógica simples e evoluindo para uma aplicação robusta com funcionalidades avançadas, como visualização de dados e empacotamento para distribuição.
 
-2. Funcionalidades Principais
+✨ Funcionalidades Principais
 
 Interface Gráfica Moderna: UI limpa e amigável construída com a biblioteca CustomTkinter.
 
@@ -17,23 +41,25 @@ Gestão de Pagamentos (CRUD): O usuário pode Criar, Ler, Atualizar e Deletar la
 
 Cálculos Dinâmicos: A aplicação recalcula automaticamente o total pago, o valor restante e o saldo devedor acumulado a cada alteração.
 
-Persistência de Dados: Todos os dados são salvos localmente em um arquivo JSON, garantindo que as informações não se percam ao fechar o app.
+Persistência de Dados: Todos os dados são salvos localmente em um arquivo JSON.
 
-Visualização de Dados: Um gráfico de pizza dinâmico (usando Matplotlib) é atualizado em tempo real, mostrando a porcentagem da dívida já paga vs. o valor restante.
+Visualização de Dados: Um gráfico de pizza dinâmico (usando Matplotlib) é atualizado em tempo real.
 
-Exportação de Relatórios: Funcionalidade para exportar o histórico completo de pagamentos para um arquivo .CSV, que pode ser aberto no Excel ou Google Sheets.
+Exportação de Relatórios: Funcionalidade para exportar o histórico completo para um arquivo .CSV.
 
 Recursos Avançados de UI:
 
-Seletor de Tema: Botão para alternar instantaneamente entre os modos "Light" (Claro) e "Dark" (Escuro).
+Seletor de Tema (Light/Dark).
 
-Efeitos de Hover: Feedback visual interativo na lista de histórico de pagamentos.
+Efeitos de Hover interativos na lista.
 
-Atalhos de Teclado: A tecla "Enter" pode ser usada para submeter formulários.
+Atalhos de Teclado (uso da tecla "Enter").
 
 Distribuição: O projeto foi empacotado em um executável (.exe) usando PyInstaller, incluindo uma Splash Screen profissional durante o carregamento.
 
-3. Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
+
+Abaixo estão as principais tecnologias e bibliotecas usadas neste projeto:
 
 Linguagem Principal: Python 3
 
@@ -43,48 +69,22 @@ Visualização de Dados: Matplotlib
 
 Manipulação de Dados: JSON (para persistência), CSV (para exportação)
 
-Bibliotecas Nativas: subprocess, os, sys, tkinter (para messagebox, filedialog e after), uuid
+Bibliotecas Nativas: subprocess, os, sys, tkinter, uuid
 
-Imagens: PIL (Pillow) (para a splash screen)
+Imagens: PIL (Pillow)
 
 Empacotamento: PyInstaller
 
-4. Como Executar (Para Desenvolvedores)
+📸 Screenshots
 
-Para executar o projeto localmente a partir do código-fonte, siga estes passos:
+Modo Claro
+<img width="1914" height="1027" alt="AppModoClaro" src="https://github.com/user-attachments/assets/b17e5612-aed4-4e83-812f-4d9704f6ebb2" />
 
-Clone o repositório:
-
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
-cd SEU-REPOSITORIO
-
-
-Crie e ative um ambiente virtual:
-
-# Windows
-python -m venv venv
-.\venv\Scripts\activate
+Modo Escuro
+<img width="1913" height="1027" alt="AppModoEscuro" src="https://github.com/user-attachments/assets/f4dcc075-07d2-4265-9e40-be63074a38b6" />
 
 
-Instale as dependências:
-
-pip install -r requirements.txt
-
-
-Execute a aplicação:
-Para rodar o programa com a splash screen (como no executável):
-
-python Splash.py
-
-
-Para rodar o programa principal diretamente (para depuração rápida):
-
-python Divida_Mayara.py
-
-
-5. Lições Aprendidas e Próximos Passos
-
-Esta seção substitui a antiga "Desafios e Aprendizados".
+🧠 Lições e Próximos Passos
 
 5.1 Lições Aprendidas
 
