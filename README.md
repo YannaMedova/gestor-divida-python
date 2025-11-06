@@ -1,7 +1,6 @@
 <!-- Imagem de Banner -->
 
 <p align="center">
-<img src="AppModoEscuro.png" alt="Screenshot do Gestor de Dívida no modo escuro" width="800px" />
 </p>
 
 <!-- Título e Badges -->
