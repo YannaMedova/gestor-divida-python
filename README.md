@@ -1,112 +1,81 @@
-<!-- Imagem de Banner -->
+<h1 align="center">💰 Gestor de Dívida Pessoal (Desktop App)</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status">
+  <img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python">
+  <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet" alt="CustomTkinter">
+  <img src="https://img.shields.io/badge/Gráficos-Matplotlib-orange" alt="Matplotlib">
 </p>
 
-<!-- Título e Badges (CORRIGIDOS) -->
+---
 
-<h1 align="center">Gestor de Dívida Pessoal (Desktop App)</h1>
+## 📌 Sobre o Projeto
 
-<p align="center">
-<img alt="Status do Projeto" src="https://www.google.com/search?q=https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen">
-<img alt="Linguagem" src="https://www.google.com/search?q=https://img.shields.io/badge/Python-3.x-blue">
-<img alt="UI" src="https://www.google.com/search?q=https://img.shields.io/badge/UI-CustomTkinter-blueviolet">
-<img alt="Gráficos" src="https://www.google.com/search?q=https://img.shields.io/badge/Gr%C3%A1ficos-Matplotlib-orange">
-<img alt="Licença" src="https://www.google.com/search?q=https://img.shields.io/badge/Licen%C3%A7a-MIT-informational">
-</p>
+Este é um projeto de estudo pessoal desenvolvido com o objetivo de substituir um acompanhamento manual de pagamentos (antes feito em planilha) por uma aplicação desktop **mais organizada, automatizada e intuitiva**.
 
-<!-- Índice -->
+O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e visualizar o progresso em gráficos, tudo em uma interface moderna e funcional.
 
-<p align="center">
-<a href="#-sobre-o-projeto">Sobre o Projeto</a> •
-<a href="#-funcionalidades-principais">Funcionalidades</a> •
-<a href="#-tecnologias-utilizadas">Tecnologias</a> •
-<a href="#-screenshots">Screenshots</a> •
-<a href="#-lições-e-próximos-passos">Aprendizados</a> •
-<a href="#-licença">Licença</a>
-</p>
+---
 
-🚀 Sobre o Projeto
+## ✨ Funcionalidades Principais
 
-Este é um projeto de estudo pessoal desenvolvido com o objetivo de aplicar e aprofundar meus conhecimentos em Python e desenvolvimento de interfaces gráficas (GUI). A aplicação substitui o acompanhamento manual de um empréstimo (feito anteriormente em uma planilha) por uma solução de desktop completa, funcional e interativa.
+| Funcionalidade | Descrição |
+|---|---|
+| 🖥 Interface Gráfica Moderna | Construída com **CustomTkinter** (Light/Dark Mode). |
+| 📄 CRUD Completo | Criar, visualizar, editar e remover pagamentos. |
+| 🔢 Cálculos Automáticos | Atualiza total pago, saldo e restante devido. |
+| 💾 Persistência de Dados | Armazenamento local em **JSON**. |
+| 📊 Visualização | Gráfico dinâmico atualizado em tempo real (Matplotlib). |
+| 📤 Exportação | Exporta histórico de pagamentos em **CSV**. |
+| 🚀 Empacotado em Executável | Gerado via **PyInstaller**, com **splash screen** personalizada. |
 
-O projeto foi construído de forma incremental, começando com uma lógica simples e evoluindo para uma aplicação robusta com funcionalidades avançadas, como visualização de dados e empacotamento para distribuição.
+---
 
-✨ Funcionalidades Principais
+## 🛠 Tecnologias Utilizadas
 
-Interface Gráfica Moderna: UI limpa e amigável construída com a biblioteca CustomTkinter.
+| Área | Ferramentas |
+|---|---|
+| Linguagem | Python 3 |
+| Interface | CustomTkinter |
+| Visualização | Matplotlib |
+| Dados | JSON (persistência), CSV (exportação) |
+| Imagens | Pillow (PIL) |
+| Empacotamento | PyInstaller |
 
-Gestão de Pagamentos (CRUD): O usuário pode Criar, Ler, Atualizar e Deletar lançamentos de pagamento.
+---
 
-Cálculos Dinâmicos: A aplicação recalcula automaticamente o total pago, o valor restante e o saldo devedor acumulado a cada alteração.
+## 🖼 Screenshots
 
-Persistência de Dados: Todos os dados são salvos localmente em um arquivo JSON.
+### 🌞 Modo Claro
+![Modo Claro](https://github.com/user-attachments/assets/b17e5612-aed4-4e83-812f-4d9704f6ebb2)
 
-Visualização de Dados: Um gráfico de pizza dinâmico (usando Matplotlib) é atualizado em tempo real.
+### 🌙 Modo Escuro
+![Modo Escuro](https://github.com/user-attachments/assets/f4dcc075-07d2-4265-9e40-be63074a38b6)
 
-Exportação de Relatórios: Funcionalidade para exportar o histórico completo para um arquivo .CSV.
+---
 
-Recursos Avançados de UI:
+## 🧠 Lições e Aprendizados
 
-Seletor de Tema (Light/Dark).
+- Aprendi a integrar **CustomTkinter + Matplotlib** mantendo responsividade e atualização visual.
+- Resolvi erros de **condição de corrida** durante troca de temas, usando `widget.after()`.
+- Usei gestão de recursos com `sys._MEIPASS` para garantir paths corretos no executável.
+- Desenvolvi lógica de **comunicação entre processos** para controlar a splash screen.
 
-Efeitos de Hover interativos na lista.
+---
 
-Atalhos de Teclado (uso da tecla "Enter").
+## 🔮 Próximos Passos
 
-Distribuição: O projeto foi empacotado em um executável (.exe) usando PyInstaller, incluindo uma Splash Screen profissional durante o carregamento.
+- Adicionar **observações opcionais por pagamento**.
+- Permitir edição da dívida inicial diretamente pela interface.
+- Criar **instalador .msi** para distribuição simplificada.
 
-🛠️ Tecnologias Utilizadas
+---
 
-Abaixo estão as principais tecnologias e bibliotecas usadas neste projeto:
+## 👩‍💻 Autor
 
-Linguagem Principal: Python 3
+**Yanna Medova**  
+Brasília / DF  
+Estudante de Defesa Cibernética (3º Semestre)  
+LinkedIn: *adicione aqui quando quiser*
 
-Interface Gráfica (GUI): CustomTkinter
-
-Visualização de Dados: Matplotlib
-
-Manipulação de Dados: JSON (para persistência), CSV (para exportação)
-
-Bibliotecas Nativas: subprocess, os, sys, tkinter, uuid
-
-Imagens: PIL (Pillow)
-
-Empacotamento: PyInstaller
-
-📸 Screenshots
-
-Modo Claro
-<img width="1914" height="1027" alt="AppModoClaro" src="https://github.com/user-attachments/assets/b17e5612-aed4-4e83-812f-4d9704f6ebb2" />
-
-Modo Escuro
-<img width="1913" height="1027" alt="AppModoEscuro" src="https://github.com/user-attachments/assets/f4dcc075-07d2-4265-9e40-be63074a38b6" />
-
-
-🧠 Lições e Próximos Passos
-
-5.1 Lições Aprendidas
-
-Este projeto foi uma jornada de aprendizado intensiva em depuração e integração de bibliotecas.
-
-Integração de Bibliotecas: Integrar o Matplotlib com o CustomTkinter, especialmente para garantir que o fundo do gráfico mudasse junto com o tema, exigiu uma lógica de destruir e recriar o canvas do gráfico a cada troca.
-
-Programação Concorrente (UI): Resolvi um bug de "condição de corrida" (TclError) que ocorria ao trocar o tema. Aprendi a usar o método .after(10, ...) para agendar a recriação do gráfico, dando tempo para a troca de tema ser concluída primeiro.
-
-Comunicação entre Processos: Para a splash screen (Splash.exe) fechar no momento certo, implementei um sistema de sinalização baseado em arquivo (signal.tmp), onde o app principal (Divida_Mayara.exe) cria um arquivo para "avisar" a splash que ela pode fechar.
-
-Empacotamento: Aprendi a usar a função resource_path (com sys._MEIPASS) para garantir que o .exe final sempre encontrasse seus arquivos "assets" (ícone, JSON, imagens), independentemente de onde fosse executado.
-
-5.2 Próximos Passos
-
-Como todo projeto, sempre há espaço para melhorias. Algumas ideias para o futuro incluem:
-
-Campo de "Observação": Adicionar um campo de texto opcional para notas em cada pagamento.
-
-Edição da Dívida Inicial: Permitir que o usuário altere o valor da dívida inicial através da própria interface.
-
-Instalador: Criar um instalador .msi completo em vez de depender de um arquivo .zip com a pasta do programa.
-
-📄 Licença
-
-Este projeto é distribuído sob a licença MIT.
+---
