@@ -1,0 +1,15 @@
+{
+    "divida_total_inicial": 2500.0,
+    "pagamentos": [
+        {
+            "data": "20/08/2025",
+            "valor": 100.0,
+            "id": "c17c07f1-0259-4ec4-939f-b195b5169512"
+        },
+        {
+            "data": "01/09/2025",
+            "valor": 100.0,
+            "id": "0e16ffca-3e40-42fb-9e22-a925f9ac4b18"
+        }
+    ]
+}
