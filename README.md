@@ -9,25 +9,26 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## 🌟 Visão Geral
 
-Este é um projeto de estudo pessoal desenvolvido com o objetivo de substituir um acompanhamento manual de pagamentos (antes feito em planilha) por uma aplicação desktop **mais organizada, automatizada e intuitiva**.
+Este projeto nasceu de uma necessidade real: **acompanhar pagamentos de forma organizada**, sem depender de planilhas manuais.  
+A solução foi transformar esse processo em uma **aplicação desktop completa**, com cálculos automáticos, gráficos em tempo real e uma interface moderna.
 
-O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e visualizar o progresso em gráficos, tudo em uma interface moderna e funcional.
+O objetivo foi **simplificar o controle de dívidas**, deixando-o mais visual, rápido e intuitivo — mesmo para quem não tem familiaridade técnica.
 
 ---
 
-## ✨ Funcionalidades Principais
+## ✨ Funcionalidades
 
 | Funcionalidade | Descrição |
 |---|---|
-| 🖥 Interface Gráfica Moderna | Construída com **CustomTkinter** (Light/Dark Mode). |
+| 🖥 Interface Moderna | Construída com **CustomTkinter**, incluindo Light/Dark Mode. |
 | 📄 CRUD Completo | Criar, visualizar, editar e remover pagamentos. |
-| 🔢 Cálculos Automáticos | Atualiza total pago, saldo e restante devido. |
-| 💾 Persistência de Dados | Armazenamento local em **JSON**. |
-| 📊 Visualização | Gráfico dinâmico atualizado em tempo real (Matplotlib). |
-| 📤 Exportação | Exporta histórico de pagamentos em **CSV**. |
-| 🚀 Empacotado em Executável | Gerado via **PyInstaller**, com **splash screen** personalizada. |
+| 🔢 Cálculos Inteligentes | Total pago, saldo e restante atualizados automaticamente. |
+| 💾 Armazenamento Local | Dados persistidos em **JSON**. |
+| 📊 Dashboard Visual | Gráfico dinâmico atualizado em tempo real (Matplotlib). |
+| 📤 Exportação em CSV | Histórico completo exportável com um clique. |
+| 🚀 Versão Executável | Empacotada com **PyInstaller**, incluindo **splash screen**. |
 
 ---
 
@@ -37,8 +38,9 @@ O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e vis
 |---|---|
 | Linguagem | Python 3 |
 | Interface | CustomTkinter |
-| Visualização | Matplotlib |
-| Dados | JSON (persistência), CSV (exportação) |
+| Gráficos | Matplotlib |
+| Armazenamento | JSON |
+| Exportação | CSV |
 | Imagens | Pillow (PIL) |
 | Empacotamento | PyInstaller |
 
@@ -54,12 +56,22 @@ O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e vis
 
 ---
 
-## 🧠 Lições e Aprendizados
+## 🎯 O que este Projeto Demonstra Sobre Mim
 
-- Aprendi a integrar **CustomTkinter + Matplotlib** mantendo responsividade e atualização visual.
-- Resolvi erros de **condição de corrida** durante troca de temas, usando `widget.after()`.
-- Usei gestão de recursos com `sys._MEIPASS` para garantir paths corretos no executável.
-- Desenvolvi lógica de **comunicação entre processos** para controlar a splash screen.
+- Capacidade de **converter um problema real em uma solução funcional**.
+- Habilidade de trabalhar com **interface gráfica moderna em Python**.
+- Conhecimento de **gerenciamento de dados e atualização dinâmica de interface**.
+- Atenção a detalhes de **experiência do usuário** (tema claro/escuro, layout responsivo).
+- Capacidade de **empacotar e distribuir software** para uso por terceiros.
+
+---
+
+## 🧠 Lições e Aprendizados Técnicos
+
+- Integração eficaz entre **CustomTkinter + Matplotlib**.
+- Controle de renderização com `widget.after()` para evitar travamentos visuais.
+- Uso de `sys._MEIPASS` para garantir caminhos corretos ao empacotar.
+- Implementação de **splash screen com sincronização de processos**.
 
 ---
 
@@ -67,7 +79,7 @@ O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e vis
 
 - Adicionar **observações opcionais por pagamento**.
 - Permitir edição da dívida inicial diretamente pela interface.
-- Criar **instalador .msi** para distribuição simplificada.
+- Criar **instalador .msi** para facilitar distribuição.
 
 ---
 
@@ -76,6 +88,6 @@ O app permite cadastrar pagamentos, calcular saldo devedor automaticamente e vis
 **Yanna Medova**  
 Brasília / DF  
 Estudante de Defesa Cibernética (3º Semestre)  
-LinkedIn: *adicione aqui quando quiser*
+LinkedIn: www.linkedin.com/in/yanna-medova-cyber
 
 ---
