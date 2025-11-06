@@ -3,7 +3,7 @@
 <p align="center">
 </p>
 
-<!-- Título e Badges -->
+<!-- Título e Badges (CORRIGIDOS) -->
 
 <h1 align="center">Gestor de Dívida Pessoal (Desktop App)</h1>
 
@@ -106,3 +106,7 @@ Campo de "Observação": Adicionar um campo de texto opcional para notas em cada
 Edição da Dívida Inicial: Permitir que o usuário altere o valor da dívida inicial através da própria interface.
 
 Instalador: Criar um instalador .msi completo em vez de depender de um arquivo .zip com a pasta do programa.
+
+📄 Licença
+
+Este projeto é distribuído sob a licença MIT.
